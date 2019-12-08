@@ -21,7 +21,7 @@ function valdiateName() {
 
 function valdiateEmail() {
   // const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-z]{2,5})$/;
-  const re = /^(201[0-9][bB][iI][tT][0-9]{3})@sggs.ac.in/;
+  const re = /^201[0-9]BIT|bit[0-9]{3}@sggs.ac.in$/;
   if (!re.test(email.value)) {
     email.classList.add('is-invalid');
   } else {
@@ -42,7 +42,7 @@ function valdiatePhone() {
 }
 
 function valdiateRegistration() {
-  const re = /^201[0-9][bB][iI][tT][0-9]{3}$/;
+  const re = /^201[0-9]BIT|bit[0-9]{3}$/;
   if (!re.test(registration.value)) {
     registration.classList.add('is-invalid');
   } else {
@@ -59,12 +59,12 @@ submit.addEventListener('click', function (e) {
     showAlert('danger', 'Enter Valid Name 😬');
   } else if (email.classList.contains('is-invalid')) {
     showAlert('danger', 'Enter Valid Email 😦');
-  } else if (registration.classList.contains('is-invalid')){
+  } else if (registration.classList.contains('is-invalid')) {
     showAlert('danger', 'Enter Valid Registration No. 😵');
-  }else if(phone.classList.contains('is-invalid')){
-    showAlert('danger', 'Enter Valid Phone Number 🙄');      
-  }else{
-     showAlert('success', 'Thank You !!🙂 ')
+  } else if (phone.classList.contains('is-invalid')) {
+    showAlert('danger', 'Enter Valid Phone Number 🙄');
+  } else {
+    showAlert('success', 'Thank You !!🙂 ')
     //  name.value = '';
     //  email.value = '';
     //  phone.value= '';

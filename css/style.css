@@ -1,0 +1,22 @@
+body {
+  background: blueviolet;
+  font-family: 'Open Sans', sans-serif;
+  background-attachment: fixed;
+}
+
+#submit {
+  background-color: blueviolet;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
