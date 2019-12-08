@@ -1,15 +1,11 @@
 body {
   background: blueviolet;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Solway', serif;
   background-attachment: fixed;   
 }
 
 #submit {
   background-color: blueviolet;
-}
-
-h1 {
-  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 input[type='number'] {
