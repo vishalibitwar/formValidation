@@ -52,26 +52,26 @@ function valdiateRegistration() {
 }
 
 
-submit.addEventListener('click', function (e) {
-  if (name.value.trim() == '' || email.value.trim() == '' || registration.value.trim() == '' || phone.value.trim() == '') {
-    showAlert('danger', 'Fields can not be blank');
-  } else if (name.classList.contains('is-invalid')) {
-    showAlert('danger', 'Enter Valid Name 😬');
-  } else if (email.classList.contains('is-invalid')) {
-    showAlert('danger', 'Enter Valid Email 😦');
-  } else if (registration.classList.contains('is-invalid')) {
-    showAlert('danger', 'Enter Valid Registration No. 😵');
-  } else if (phone.classList.contains('is-invalid')) {
-    showAlert('danger', 'Enter Valid Phone Number 🙄');
-  } else {
-    showAlert('success', 'Thank You !!🙂 ')
+// submit.addEventListener('click', function (e) {
+//   if (name.value.trim() == '' || email.value.trim() == '' || registration.value.trim() == '' || phone.value.trim() == '') {
+//     showAlert('danger', 'Fields can not be blank');
+//   } else if (name.classList.contains('is-invalid')) {
+//     showAlert('danger', 'Enter Valid Name 😬');
+//   } else if (email.classList.contains('is-invalid')) {
+//     showAlert('danger', 'Enter Valid Email 😦');
+//   } else if (registration.classList.contains('is-invalid')) {
+//     showAlert('danger', 'Enter Valid Registration No. 😵');
+//   } else if (phone.classList.contains('is-invalid')) {
+//     showAlert('danger', 'Enter Valid Phone Number 🙄');
+//   } else {
+//     showAlert('success', 'Thank You !!🙂 ')
     //  name.value = '';
     //  email.value = '';
     //  phone.value= '';
     //  registration.value= '';
-  }
+  // }
   // e.preventDefault();
-});
+// });
 
 
 function showAlert(color, message) {
