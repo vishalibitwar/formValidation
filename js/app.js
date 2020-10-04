@@ -2,7 +2,7 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const registration = document.getElementById('registration');
 const phone = document.getElementById('phone');
-// const submit = document.getElementById('submit');
+const submit = document.getElementById('submit');
 
 name.addEventListener('blur', valdiateName);
 registration.addEventListener('blur', valdiateRegistration);
@@ -52,36 +52,36 @@ function valdiateRegistration() {
 }
 
 
-// submit.addEventListener('click', function (e) {
-//   if (name.value.trim() == '' || email.value.trim() == '' || registration.value.trim() == '' || phone.value.trim() == '') {
-//     showAlert('danger', 'Fields can not be blank');
-//   } else if (name.classList.contains('is-invalid')) {
-//     showAlert('danger', 'Enter Valid Name 😬');
-//   } else if (email.classList.contains('is-invalid')) {
-//     showAlert('danger', 'Enter Valid Email 😦');
-//   } else if (registration.classList.contains('is-invalid')) {
-//     showAlert('danger', 'Enter Valid Registration No. 😵');
-//   } else if (phone.classList.contains('is-invalid')) {
-//     showAlert('danger', 'Enter Valid Phone Number 🙄');
-//   } else {
-//     showAlert('success', 'Thank You !!🙂 ')
-    //  name.value = '';
-    //  email.value = '';
-    //  phone.value= '';
-    //  registration.value= '';
-  // }
+submit.addEventListener('click', function (e) {
+  if (name.value.trim() == '' || email.value.trim() == '' || registration.value.trim() == '' || phone.value.trim() == '') {
+    e.preventDefault();
+    showAlert('danger', 'Fields can not be blank');
+  } else if (name.classList.contains('is-invalid')) {
+    e.preventDefault();
+    showAlert('danger', 'Enter Valid Name 😬');
+  } else if (email.classList.contains('is-invalid')) {
+    e.preventDefault();
+    showAlert('danger', 'Enter Valid Email 😦');
+  } else if (registration.classList.contains('is-invalid')) {
+    e.preventDefault();
+    showAlert('danger', 'Enter Valid Registration No. 😵');
+  } else if (phone.classList.contains('is-invalid')) {
+    e.preventDefault();
+    showAlert('danger', 'Enter Valid Phone Number 🙄');
+  } else {
+  }
   // e.preventDefault();
-// });p
+});p
 
 
-// function showAlert(color, message) {
-//   const alert = document.getElementById('alert');
-//   if (!alert.classList.contains(`alert-` + color, 'p-1')) {
-//     alert.classList.add(`alert-` + color, 'p-1');
-//     alert.innerText = message;
-//     setTimeout(() => {
-//       alert.classList.remove(`alert-` + color, 'p-1');
-//       alert.innerText = '';
-//     }, 2000);
-//   }
-// }
+function showAlert(color, message) {
+  const alert = document.getElementById('alert');
+  if (!alert.classList.contains(`alert-` + color, 'p-1')) {
+    alert.classList.add(`alert-` + color, 'p-1');
+    alert.innerText = message;
+    setTimeout(() => {
+      alert.classList.remove(`alert-` + color, 'p-1');
+      alert.innerText = '';
+    }, 2000);
+  }
+}
