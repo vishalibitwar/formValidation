@@ -70,7 +70,7 @@ submit.addEventListener('click', function (e) {
     //  phone.value= '';
     //  registration.value= '';
   }
-  e.preventDefault();
+  // e.preventDefault();
 });
 
 
