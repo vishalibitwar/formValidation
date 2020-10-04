@@ -2,7 +2,7 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const registration = document.getElementById('registration');
 const phone = document.getElementById('phone');
-const submit = document.getElementById('submit');
+// const submit = document.getElementById('submit');
 
 name.addEventListener('blur', valdiateName);
 registration.addEventListener('blur', valdiateRegistration);
@@ -71,17 +71,17 @@ function valdiateRegistration() {
     //  registration.value= '';
   // }
   // e.preventDefault();
-// });
+// });p
 
 
-function showAlert(color, message) {
-  const alert = document.getElementById('alert');
-  if (!alert.classList.contains(`alert-` + color, 'p-1')) {
-    alert.classList.add(`alert-` + color, 'p-1');
-    alert.innerText = message;
-    setTimeout(() => {
-      alert.classList.remove(`alert-` + color, 'p-1');
-      alert.innerText = '';
-    }, 2000);
-  }
-}
+// function showAlert(color, message) {
+//   const alert = document.getElementById('alert');
+//   if (!alert.classList.contains(`alert-` + color, 'p-1')) {
+//     alert.classList.add(`alert-` + color, 'p-1');
+//     alert.innerText = message;
+//     setTimeout(() => {
+//       alert.classList.remove(`alert-` + color, 'p-1');
+//       alert.innerText = '';
+//     }, 2000);
+//   }
+// }

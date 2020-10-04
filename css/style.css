@@ -4,7 +4,7 @@ body {
   background-attachment: fixed;   
 }
 
-#submit {
+.btn-violet{
   background-color: blueviolet;
 }
 
