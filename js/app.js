@@ -42,7 +42,7 @@ function valdiatePhone() {
 }
 
 function valdiateRegistration() {
-  const re = /^(201[0-9]((BIT)|(bit))[0-9]{3})$/;
+  const re = /^(201[0-9]((BIT)|(bit))[0-9]{2}[1-9])$/;
   if (!re.test(registration.value)) {
     registration.classList.add('is-invalid');
   } else {
